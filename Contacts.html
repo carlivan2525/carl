@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Contacts</title>
+    <link rel="stylesheet" href="Contacts.css">
+    <style>
+        
+        .animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            opacity: 0;
+            animation-name: fadeInUp;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+    <div class="container animated fade-in-up">
+        <h1>Contact me here</h1>
+        <ul class="contact-list">
+            <li>
+                <div>
+                    <span class="contact-name">Facebook</span><br>
+                    <a href="https://www.facebook.com/officialcarlz/">facebook.com/officialcarlz</a>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span class="contact-name">Instagram</span><br>
+                    <a href="https://www.instagram.com/c.vnkn?fbclid=IwAR3DnFvyhtzOCk-M8lsQTguWf6KgP52Z7_2_wZehRfutfJiRSlvzvI9jvms">instagram.com/c.vnkn</a>
+                </div>
+            </li>
+           
+        </ul>
+    </div>
+</body>
+</html>
