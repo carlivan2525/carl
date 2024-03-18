@@ -11,7 +11,7 @@
 .profile:hover p,
 .education-container:hover h3,
 .education-container:hover p {
-    transform: translateY(-10px);
+    transform: translateY(-30px);
 }
 
 body {
@@ -86,22 +86,21 @@ nav ul li a:hover {
 }
 
 .education-container {
-    background-color: #f0f0f0;
+    background-color:  #f4f4f4;
     border-radius: 10px;
     padding: 20px;
     margin-top: 20px;
     text-align: center;
+    border-color:  #f4f4f4;
 }
 
 .education-container h3 {
     font-size: 1.2em;
-    color: #333;
     margin-bottom: 10px;
 }
 
 .education-container p {
     font-size: 1em;
-    color: #666;
     margin-top: 0;
 }
 
@@ -113,7 +112,7 @@ nav ul li a:hover {
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(50px);
     }
     to {
         opacity: 1;
