@@ -1,126 +1,33 @@
-.profile img,
-.profile h2,
-.profile p,
-.education-container h3,
-.education-container p {
-    transition: all 0.3s ease;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="index.css">
 
-.profile:hover img,
-.profile:hover h2,
-.profile:hover p,
-.education-container:hover h3,
-.education-container:hover p {
-    transform: translateY(-30px);
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-nav {
-    background-color: #333;
-    color: #333;
-    padding: 10px 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: #ffd700;
-}
-
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 15vh;
-}
-
-.profile {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.profile img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin-bottom: 10px;
-}
-
-.profile h2 {
-    color: #333;
-    margin-bottom: 5px;
-}
-
-.profile p {
-    color: #666;
-}
-
-.education-container {
-    background-color:  #f4f4f4;
-    border-radius: 10px;
-    padding: 20px;
-    margin-top: 20px;
-    text-align: center;
-    border-color:  #f4f4f4;
-}
-
-.education-container h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.education-container p {
-    font-size: 1em;
-    margin-top: 0;
-}
-
-.animated {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.fade-in-up {
-    opacity: 0;
-    animation-name: fadeInUp;
-}
+</head>
+<body>
+    <header>
+        <h1>My Personal Website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container animated fade-in-up">
+        <div class="profile">
+            <img src="CARL.jpg" alt="Profile Picture">
+            <h2>Carl Ivan Ken Simbulan</h2>
+        </div>
+        
+        <div class="education-container">
+            <p>Currently pursuing BS Information Technology at National University Laguna (NU Laguna). I am in my second year of college.</p>
+        </div>
+    </div>
+</body>
+</html>
