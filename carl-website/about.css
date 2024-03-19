@@ -11,6 +11,7 @@ body {
     background-color: #121212; 
     color: #fff; 
 }
+
 nav {
     background-color: #333; 
     color: #fff;
@@ -46,9 +47,7 @@ nav ul li a:hover {
 
 .about-section {
     padding: 50px;
-    background-color: #1a1a1a; 
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); 
+    border-radius: 15px; 
     margin-top: 10vh;
 }
 
@@ -98,4 +97,46 @@ nav ul li a:hover {
 .about-section ul,
 .about-section li {
     animation: fadeInUp 1s ease forwards;
+}
+
+/* Collapsible sections */
+.collapsible {
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+    background-color: #333;
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 0 18px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #444;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    max-height: 0;
+}
+
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #fff;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796"; 
 }
