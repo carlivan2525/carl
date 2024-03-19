@@ -3,29 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Contacts</title>
+    <title>Contacts</title>
     <link rel="stylesheet" href="Contacts.css">
     <style>
-        
-        .animated {
-            animation-duration: 1s;
-            animation-fill-mode: both;
+        .reveal-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 12px 24px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
         }
 
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .reveal-button:hover {
+            background-color: #45a049;
         }
 
-        .fade-in-up {
-            opacity: 0;
-            animation-name: fadeInUp;
+        .hidden-content {
+            display: none;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .hidden-content p {
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -52,8 +62,25 @@
                     <a href="https://www.instagram.com/c.vnkn?fbclid=IwAR3DnFvyhtzOCk-M8lsQTguWf6KgP52Z7_2_wZehRfutfJiRSlvzvI9jvms">instagram.com/c.vnkn</a>
                 </div>
             </li>
-           
+            <li>
+                <button class="reveal-button" onclick="toggleHiddenContent()">More Contacts</button>
+                <div class="hidden-content" id="hiddenContent">
+                    <p>Email: carlivan252003@gmail.com</p>
+                    <p>Phone: 09690583188</p>
+                </div>
+            </li>
         </ul>
     </div>
+
+    <script>
+        function toggleHiddenContent() {
+            var x = document.getElementById("hiddenContent");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
