@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>About</title>
     <link rel="stylesheet" href="about.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="Contacts.html">Contacts</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
         </ul>
     </nav>
 
@@ -19,59 +19,78 @@
         <div class="container">
             <h2>About Me</h2>
             <div class="resume">
-                <h3>Education</h3>
-                <ul>
-                    <li>NATIONAL UNIVERSITY - LAGUNA CAMPUS
-                        Bachelor of Science in Information Technology
-                        Current</li>
-                    <li>
-                        PATEROS TECHNOLOGICAL COLLEGE - MAIN
-                        Bachelor of Science in Information Technology
-                        2022-2023</li>
-                    <li> 
-                        FORT BONIFACIO HIGH SCHOOL
-                        ICT - Computer System Servicing
-                        2020-2022
-                         </li>
-                    <li>
-                        SIGNAL VILLAGE NATIONAL HIGH SCHOOL
-                        Information and Communication Technology
-                        2017-2020</li>
-                    <li>
-                        RICARDO P. CRUZ SR. ELEMENTARY SCHOOL
-                        2010-2016</li>
-                </ul>
-                <h3>Skills</h3>
-                <ul>
-                    <li>Programming Languages: Python, Java, JavaScript</li>
-                    <li>Web Development: HTML/CSS, React, Node.js</li>
-                    <li>Database Management: SQL, MongoDB</li>
-                    <li>Other: Git, Linux</li>
-                </ul>
-                <h3>Achievements</h3>
-                <ul>
-                    <li>PTC MAIN:
-                        1ST YEAR COLLEGE
-                        1st semester Dean’s List  GWA: 1.37 
-                        2nd semester Dean’s List GWA: 1.20</li>
-                        
+                <button class="collapsible">Education</button>
+                <div class="content">
+                    <h3> </h3>
+                    <ul>
+                        <li>NATIONAL UNIVERSITY - LAGUNA CAMPUS
+                            Bachelor of Science in Information Technology
+                            Current</li>
+                        <li>
+                            PATEROS TECHNOLOGICAL COLLEGE - MAIN
+                            Bachelor of Science in Information Technology
+                            2022-2023</li>
+                        <li> 
+                            FORT BONIFACIO HIGH SCHOOL
+                            ICT - Computer System Servicing
+                            2020-2022
+                            </li>
+                        <li>
+                            SIGNAL VILLAGE NATIONAL HIGH SCHOOL
+                            Information and Communication Technology
+                            2017-2020</li>
+                        <li>
+                            RICARDO P. CRUZ SR. ELEMENTARY SCHOOL
+                            2010-2016</li>
+                    </ul>
+                </div>
+
+                <button class="collapsible">Skills</button>
+                <div class="content">
+                    <h3> </h3>
+                    <ul>
+                        <li>Programming Languages: Python, Java, JavaScript</li>
+                        <li>Web Development: HTML/CSS, React, Node.js</li>
+                        <li>Database Management: SQL, MongoDB</li>
+                        <li>Other: Git, Linux</li>
+                    </ul>
+                </div>
+
+                <button class="collapsible">Achievements</button>
+                <div class="content">
+                    <h3> </h3>
+                    <ul>
+                        <li>PTC MAIN:
+                            1ST YEAR COLLEGE
+                            1st semester Dean’s List  GWA: 1.37 
+                            2nd semester Dean’s List GWA: 1.20</li>
                         <li>NU LAGUNA:
-                        2ND YEAR COLLEGE IRREGULAR
-                        1st semester GWA: 3.10</li>
-                        
+                            2ND YEAR COLLEGE IRREGULAR
+                            1st semester GWA: 3.10</li>
                         <li> FBHS:
-                        GRADE 11
-                        First Semester top 8</li>
-                   
-                </ul>
+                            GRADE 11
+                            First Semester top 8</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 
     <script>
-     
         document.addEventListener("DOMContentLoaded", function(event) { 
             document.querySelector('.animated').classList.add('fade-in-up');
+            const colls = document.querySelectorAll('.collapsible');
+            colls.forEach(coll => {
+                coll.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    const content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                    }
+                });
+            });
         });
     </script>
 </body>
