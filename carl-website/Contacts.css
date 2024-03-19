@@ -6,11 +6,12 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa;
+    background-color: #121212; 
+    color: #fff; 
 }
 
 nav {
-    background-color:#333;
+    background-color: #333;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -35,7 +36,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffd700;
+    color: #ffd700; 
 }
 
 .container {
@@ -43,13 +44,13 @@ nav ul li a:hover {
     margin: 20px auto;
     padding: 20px;
     border-radius: 15px;
-    background-color: #fff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);    
+    background-color: #1a1a1a; 
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 h1 {
     text-align: center;
-    color: #343a40;
+    color: #fff;
     margin-bottom: 20px;
 }
 
@@ -59,27 +60,26 @@ h1 {
 }
 
 .contact-list li {
-    border-bottom: 1px solid #e9ecef;
+    border-bottom: 1px solid #343a40;
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: background-color 0.3s ease;
 }
 
 .contact-list li:last-child {
     border-bottom: none;
 }
 
+.contact-list li:hover {
+    background-color: #343a40; 
+}
+
 .contact-name {
     font-weight: bold;
-    color: #343a40;
 }
 
 .contact-email {
-    color: #6c757d;
-}
-
-.contact-list li:hover {
-    background-color: #f2f4f4;
-    transition: background-color 0.3s ease;
+    color: #6c757d; 
 }
