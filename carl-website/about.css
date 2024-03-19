@@ -1,27 +1,25 @@
-body, nav ul li a, .about-section, .resume h3, .resume ul, .resume li {
-    transition: all 0.3s ease;
-}
-
-body:hover, nav ul li a:hover, .about-section:hover, .resume h3:hover, .resume ul:hover, .resume li:hover {
-    transform: translateY(-5px);
-}
-
-
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; 
+    color: #fff; 
+}
 nav {
-    background-color: #333;
+    background-color: #000; 
     color: #fff;
     padding: 20px 0;
     text-align: center;
     position: fixed;
     width: 100%;
     z-index: 1000;
+    top: 0; 
 }
 
 nav ul {
@@ -43,24 +41,25 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffd700;
+    color: #ffd700; 
 }
 
 .about-section {
     padding: 50px;
-    background-color:fff;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    margin-top: 0;
+    background-color: #1a1a1a; 
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); 
+    margin-top: 10vh;
 }
 
 .container {
     max-width: 800px;
-    margin: 50px auto;
+    margin: 0 auto;
 }
 
 .resume h3 {
     margin-top: 30px;
+    font-size: 24px; 
 }
 
 .resume ul {
@@ -69,9 +68,10 @@ nav ul li a:hover {
 
 .resume li {
     margin-bottom: 15px;
+    font-size: 18px;
 }
 
-
+/* Animation */
 .animated {
     animation-duration: 1s;
     animation-fill-mode: both;
@@ -91,4 +91,11 @@ nav ul li a:hover {
 .fade-in-up {
     opacity: 0;
     animation-name: fadeInUp;
+}
+
+.about-section h2,
+.about-section h3,
+.about-section ul,
+.about-section li {
+    animation: fadeInUp 1s ease forwards;
 }
