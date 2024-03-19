@@ -51,9 +51,6 @@ nav ul li a:hover {
     max-width: 800px;
     margin: 10vh auto; 
     padding: 40px;
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.05); 
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1); 
 }
 
 .profile {
@@ -84,12 +81,11 @@ nav ul li a:hover {
 }
 
 .education-container {
-    background-color: #181818;
     border-radius: 15px;
     padding: 40px;
     margin-top: 40px;
     text-align: center;
-    border-color: #181818;
+    
     color: #fff;
 }
 
